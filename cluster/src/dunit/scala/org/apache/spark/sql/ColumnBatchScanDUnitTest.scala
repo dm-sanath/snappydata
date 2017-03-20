@@ -23,10 +23,6 @@ class ColumnBatchScanDUnitTest(s: String) extends ClusterManagerTestBase(s) {
 
   def testColumnBatchSkipping(): Unit = {
 
-  }
-
-  def _testColumnBatchSkipping(): Unit = {
-
     val snc = SnappyContext(sc)
     val ddlStr = "YearI INT NOT NULL," +
         "MonthI INT NOT NULL," +
